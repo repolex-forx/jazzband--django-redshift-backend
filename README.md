@@ -1,1 +1,158 @@
-Initializing
+# Repolex Knowledge Graph of jazzband/django-redshift-backend
+
+RDF knowledge graph data for [jazzband/django-redshift-backend](https://github.com/jazzband/django-redshift-backend), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download jazzband/django-redshift-backend
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── a11625e445d5bb78e8ec95478d40cf0b4039ea38
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── a11625e445d5bb78e8ec95478d40cf0b4039ea38
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 031056372d7967b8c495d170c49503c76b54754d.nq.gz
+│   ├── 083216c521ae53f126e93a7c5e2a1b12bafe142e.nq.gz
+│   ├── 17d33c783ad48dd60717d11e36877f7bc8d95e42.nq.gz
+│   ├── 18929213ca4026e975a3f7e7123105abc99d5a46.nq.gz
+│   ├── 19ac342a27a61a395e930e3f6a080e736e04d720.nq.gz
+│   ├── 1befc1935fd429faed4778fc6db1ba52830dcf64.nq.gz
+│   ├── 265cd8245e2af68cff864b4c634fdf84aed89454.nq.gz
+│   ├── 2d5a8080b27622465b2bf5b26e204fdae97b851a.nq.gz
+│   ├── 3372a6056806b18d9cda65d368ad92ba9dffe62d.nq.gz
+│   ├── 34aec73c6d271665123777433d297fd537e47a5f.nq.gz
+│   ├── 37a4ac83e3f3ff14cd8073c4c9f7c03acaa0c2a4.nq.gz
+│   ├── 3da89b115a33e18bf714cb58d85a1efcc8815f57.nq.gz
+│   ├── 3e0726c30436d4710b27e112c776cbc84f7a5ebd.nq.gz
+│   ├── 412d07a993db9b4e7d12330c5a6dc303c90a3c31.nq.gz
+│   ├── 418fea25775f4eb2984edaa5f637ca4946ae3f23.nq.gz
+│   ├── 46705fd22c365f0df80ff556da937c8c7e034cd3.nq.gz
+│   ├── 4821f604e05c19cbbbde7fbc1061c17abf338fd7.nq.gz
+│   ├── 49fca3c85f0a21aee209c177e6c6f96f6b3745be.nq.gz
+│   ├── 4cfe7f65d66025a52fb4e565668ae62ed79a3acf.nq.gz
+│   ├── 51f1892f2530aa3862c6e8c16a41a19648290e33.nq.gz
+│   ├── 5e3bf3b3a7d610f3063317170bc13e9e888a679f.nq.gz
+│   ├── 60d4580c76855ad6421419873998bb317a9e86db.nq.gz
+│   ├── 626d9d12f0a3908a73c56f215ef6cc0ccf5da6c6.nq.gz
+│   ├── 63bf45b4cce077d6ed6085cf8c10acce9616ecbf.nq.gz
+│   ├── 663efdd0b74eabb2590fbdd786d192729829015e.nq.gz
+│   ├── 70aee82cbcf067282a14f51e7b3a4df51724d668.nq.gz
+│   ├── 79e4514fa73429205baa5ac5c94498d36bc47e22.nq.gz
+│   ├── 7a233a6182fe00a54596d0344b16909acef92089.nq.gz
+│   ├── 7cd105ac0635516fd5c99139e13db9b23502aec3.nq.gz
+│   ├── 7d595de79f6e0bb237c591d3d220b177351840ea.nq.gz
+│   ├── 7ebe361733e10baebea3374992dc967c63136305.nq.gz
+│   ├── 803939df4f07d607b2b2557c5e7dca9df8d34a39.nq.gz
+│   ├── 82133027c9eb6dd3ff20c82704ecf25650e474f5.nq.gz
+│   ├── 8438497b5d831b8723fd996ee41f0a353aad4f82.nq.gz
+│   ├── 8cd78d4f853c36e8d12fac55e88f5b58db469dba.nq.gz
+│   ├── 8e485616e30d49911357631093ab6cc48a491100.nq.gz
+│   ├── 8e7ac79b9576cb38f460147ec7f3ade64a100c62.nq.gz
+│   ├── 8efbc95b85b5f974150e23721039959b41e72a9a.nq.gz
+│   ├── 91b8979e02963d60154b95f91f70a4476e56d6f9.nq.gz
+│   ├── 945c0fe6d4d973237f3b854727047eb7210f76e7.nq.gz
+│   ├── 95e0e90eab2e6af1b33d009f56c79cd67cfc13c5.nq.gz
+│   ├── 95e6ea6a4636058b7b2282afcf7f1cf53febafe6.nq.gz
+│   ├── 9cbe0734f1a49067fc50dbf0637878c535fbb275.nq.gz
+│   ├── 9f4ccf3b99f67652b94dcd90ea58eb83b16f814a.nq.gz
+│   ├── a06ba40584cf120e0619387ef385dc4a1b6956c3.nq.gz
+│   ├── a1396bf65a42751a7b99aa6531eab614a31e8aa3.nq.gz
+│   ├── a1bf1ddcde4c9ef66d292367fb4e8efc223a1a49.nq.gz
+│   ├── a4ea136a7bbb66d37f486ed562cf6c9779c411ac.nq.gz
+│   ├── a65639b1dd26948440644217122879dbf235633f.nq.gz
+│   ├── aef4d3dba24e6152bcdb72f14566b463be961ee6.nq.gz
+│   ├── b18d9c4e479ef198979087f8f281af09dc650ee9.nq.gz
+│   ├── b36df6417e37ef07d02d73132e6f8d63be7b9e21.nq.gz
+│   ├── bdcc0b04ba53ef1891c986723c8f579b62a959a8.nq.gz
+│   ├── bf27fa78d2899532364f0bdf404a33ebcd7622ca.nq.gz
+│   ├── c344ec62010d80b7b0e627fc6c5eb74e08ea0caa.nq.gz
+│   ├── ca323382ce740efbccaa32d17a7184f8d6646b7e.nq.gz
+│   ├── d0092b1753935759ba8b6a3a33e4aeab2086b719.nq.gz
+│   ├── d0e3e2157d694c5d5cb23b7bcfcd39873862a139.nq.gz
+│   ├── d215f56b58b89181a5c50a99de648bbf15634109.nq.gz
+│   ├── d4535e6c9998a1d8cd2a20750a170987df3f865f.nq.gz
+│   ├── d89e73f678c5c1d379d7ed6266cdf738e29e86ed.nq.gz
+│   ├── dbdada140633f3268e65d46dac54959a845f30d5.nq.gz
+│   ├── e0d5efab56fb94577e7804603eb6f21f36977cb2.nq.gz
+│   ├── e4f576d1de77a2aa337606d7a129b0a27fa13d75.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e6b0ac436aca4921c6d41e6baf35c0bf635285e5.nq.gz
+│   ├── e9796a5feaf4994a9409ba5cc1ba8a53ec8cc8d0.nq.gz
+│   ├── ea98656310db6fa9323347e049b67dbf769609b2.nq.gz
+│   ├── eafc68cb9b7aee86b11d9e6da1f58634cea0e544.nq.gz
+│   ├── ebc1adde9e78ce0c4748f6991f850fdbf9a32447.nq.gz
+│   ├── ece3ff3234be2601b9c7d8bc3210a59144026ed2.nq.gz
+│   ├── f29a551f52b0b85c60aa3baad335b4e670b53bd8.nq.gz
+│   ├── f3ef90b058d580329205308ab484683ca8fe4221.nq.gz
+│   ├── f4cebd533b08bff9ee5b920eb53504cc3c26e472.nq.gz
+│   ├── f6e2b2278a90f29665aaade01306589a6831f975.nq.gz
+│   ├── f7762511c1682d92df404044937c2f1c36fbc771.nq.gz
+│   ├── f9d3888b7810e4dbe8dcef3ac6e945741e8f7cc6.nq.gz
+│   ├── fbfb23a488a1059275be628769d43e59074a9be9.nq.gz
+│   └── fe7473a1353371816b5d8555b942a0717dbc988c.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── a11625e445d5bb78e8ec95478d40cf0b4039ea38.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 87 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[jazzband/django-redshift-backend](https://github.com/jazzband/django-redshift-backend)
+
+---
+*Parsed on 2026-10-11 by [repolex](https://repolex.ai)*

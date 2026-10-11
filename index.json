@@ -1,0 +1,11 @@
+{
+  "org": "jazzband",
+  "repo": "django-redshift-backend",
+  "versions": [
+    {
+      "commit": "a11625e445d5bb78e8ec95478d40cf0b4039ea38",
+      "tag": "",
+      "parsed_at": "2026-10-11T03:08:04.972778+00:00"
+    }
+  ]
+}
