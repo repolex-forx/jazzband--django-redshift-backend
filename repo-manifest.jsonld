@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/jazzband/django-redshift-backend/commit/a11625e445d5bb78e8ec95478d40cf0b4039ea38",
       "git:hexsha": "a11625e445d5bb78e8ec95478d40cf0b4039ea38",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     },
     {
       "@id": "https://repolex.ai/r/jazzband/django-redshift-backend/commit/9bfb8ce0901e6b67e855aa6180edcac8c1fa05ff",
